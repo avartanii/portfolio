@@ -21,8 +21,6 @@ These are various 3D Models I have created completely by myself. I took an intro
 
 These are two different projects. FiniteAutomata is a personal assignment I did for fun for my professor in our Theory of Computation course. KirkmanSolver was an assignment from our Algorithms course.
 
-- FiniteAutomata: This program takes in a Definitive Finite Automata and determines whether strings passed in by the user are accepted or rejected by the machine.
-
 - AdvancedChangeMaker: This program takes in coin denominations and an amount and presents the most efficient collection of coins that will add up to the given amount.
   - For example: Given the denominations (1, 4, 5) and an amount 8, the solution will propose using two 4-cent coins as opposed to one 5-cent and three 1-cent coins).
   - Tuple.java is written for this program only.
@@ -33,6 +31,8 @@ These are two different projects. FiniteAutomata is a personal assignment I did 
   - Given the prior example, this would output the second solution.
   
 - DateCounter: Simple calendar related functions such as checking if a year is a leap year, returns the number of days in a month, if a year has a leap second, and the number of days between two given dates.
+
+- FiniteAutomata: This program takes in a Definitive Finite Automata and determines whether strings passed in by the user are accepted or rejected by the machine.
 
 - KirkmanSolver: This is a solution to Kirkman's Schoolgirl Problem.
     
