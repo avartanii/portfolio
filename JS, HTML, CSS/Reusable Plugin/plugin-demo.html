@@ -1,0 +1,93 @@
+<!doctype html>
+
+<!-- A demonstration page for some hand-rolled jQuery plugins. -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+
+
+    <title>jQuery Plugin Demos</title>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Sometimes, a plugin needs "companion" CSS.  That is fine. -->
+    <!-- <link rel="stylesheet" href="jquery.in-place-editor.css"> -->
+    <!-- <link rel="stylesheet" href="jquery.swivel.css"> -->
+
+    <!-- And the page has its own styles. -->
+    <link rel="stylesheet" href="plugin-demo.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="jquery.slider.css">
+
+    <!-- <link rel="stylesheet" href="frontend-with-plugin.css"> -->
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>jQuery Plugin Demonstration Gallery</h1>
+
+          <p class="lead">This page demonstrates a collection of user interface components implemented as jQuery
+            plugins. They all include callback functionality, which can be seen in the “Event Log” section of
+            this page.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>“Slider” Control</h2>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h5 class="panel-title">Sample</h5>
+                </div>
+
+                <div class="panel-body">
+                  
+                  <p>Use the slider to select a value.</p>
+          
+
+                  <div class="slide-base">
+                    <div id="slider" class="slide-this" data-min="1" data-max="10">
+                    </div>
+                  </div>
+
+                  <div><p id="par" style="margin-top: 20px">Slider Value: </p></div>
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-4 col-xs-12">
+            <h3>Event Log</h3>
+            <pre class="event-log" style="height: 500px"></pre>
+          </div>
+
+      </div>      
+    </div>
+
+      <!-- We wrap up by loading up jQuery, then Bootstrap, then our plugins,
+      then finally we actually use them. -->
+      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script src="plugin-demo.js"></script>
+
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+      <script src="jquery.slider.js"></script>
+
+  </body>
+</html>

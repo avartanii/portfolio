@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imgur API Front End Sample</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <style>
+    .image-result-container{
+      margin-top: 30px;
+      margin-bottom: 30px
+    }
+  </style>
+</head>
+
+
+<body>
+  <h3></h3>
+  <div class="container">
+    <div class="col-xs-12">
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+        <li><a data-toggle="pill" href="#search">Search</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">Galleries
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a data-toggle="pill" href="#tGallery">Trending Gallery</a></li>
+              <li><a data-toggle="pill" href="#mGallery">Trending Memes</a></li>
+              <li><a data-toggle="pill" href="#topics">Topics</a></li> 
+            </ul>
+          </li>
+
+          <li><a data-toggle="pill" href="#upload-image">Upload Image</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+
+
+
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
+          </div>
+
+
+          <div id="search" class="tab-pane fade">
+            <h3>Image Search!</h3>
+            <p>Type in a search term in the bar below and click "Search Imgur!"</p>
+            <div class="container">
+
+              <div class="form-group">
+                <label for="search-term">Enter a search term:</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+
+              <div class="form-group">
+                <button id="search-button" class="btn btn-default" enabled>Search Imgur!</button>
+              </div>
+
+              <div class="row image-result-container">
+                  <!-- <style>
+                  {
+                    margin-top: 30px;
+                    margin-bottom: 30px
+                  }
+                </style> -->
+              </div>
+
+                <!-- <div class="container-fluid" id="albums-container">
+                  <div class="row image-result-container">
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+
+            <div id="tGallery" class="tab-pane fade">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Want to see what's HOT on imgur.com right now?</h3>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button id="gallery-button" class="btn btn-default" enabled>Check it out!</button>
+                </div>
+
+                <div class="row image-result-container">
+                </div>
+              </div>
+            </div>
+
+            <div id="mGallery" class="tab-pane fade">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Want to see a gallery of memes?</h3>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button id="meme-button" class="btn btn-default" enabled>Yes!</button>
+                </div>
+
+                <div class="form-group">
+                  <button id="meme-button" class="btn btn-default" disabled>No!</button>
+                </div>
+
+                <div class="row image-result-container">
+                </div>
+              </div>
+            </div>
+
+
+            <div id="topics" class="tab-pane fade">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Click on one of the topics below to see a gallery of images based off of that topic!</h3>
+                  </div>
+              
+                  <div class="col-xs-2">
+                    <div class="form-group">
+                      <button id="topic-button1" class="btn btn-default" enabled>Halloween</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="form-group">
+                      <button id="topic-button2" class="btn btn-default" enabled>Funny</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="form-group">
+                      <button id="topic-button3" class="btn btn-default" enabled>Science and Tech</button>
+                    </div>
+                  </div>
+
+                    <div class="row image-result-container">
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+            <div id="upload-image" class="tab-pane fade">
+            <p>Paste a link to a picture to rehost it on Imgur for easy sharing!</p>
+            <div class="container">
+
+              <div class="form-group">
+                <label for="upload-link">Enter an image link:</label>
+                <input type="text" class="form-control" id="upload-link">
+              </div>
+
+              <div class="form-group">
+                <button id="upload-button" class="btn btn-default" enabled>Upload Image!</button>
+              </div>
+
+              <div class="row image-result-container">
+                  <!-- <style>
+                  {
+                    margin-top: 30px;
+                    margin-bottom: 30px
+                  }
+                </style> -->
+              </div>
+
+                <!-- <div class="container-fluid" id="albums-container">
+                  <div class="row image-result-container">
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+            </div>
+
+          </div>  
+        </div>
+
+
+      </div> 
+
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="imgur-api.js"></script>
+      <script>window.ImgurSearchController.init()</script>
+    </body>
+    </html>

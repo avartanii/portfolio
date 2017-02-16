@@ -1,0 +1,8 @@
+.slider {
+    line-height: height;
+    border: none;
+    display: flex;
+    align-items: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

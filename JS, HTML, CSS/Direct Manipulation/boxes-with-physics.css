@@ -1,0 +1,33 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+/* Drawing area properties. */
+.drawing-area {
+    position: relative;
+    user-select: none;
+}
+
+/* Box properties and their variants. */
+.box {
+    border: thin solid black;
+    position: absolute;
+}
+
+.box-highlight {
+    box-shadow: 0px 0px 6px #88F;
+}
+
+.box-highlight-draw {
+    box-shadow: 0px 0px 6px #F0F;
+}
+
+.box-highlight-trash {
+    box-shadow: 0px 0px 6px #F00;
+}
+
+.box-highlight-zoom {
+    box-shadow: 0px 0px 6px #0F0;
+}
+
+/*.trash-highlight {
+    box-shadow: 0px 0px #FF0000;
+}*/
