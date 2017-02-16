@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 Examples of past assignments and projects
 
 **Description of Contents**
@@ -25,15 +25,15 @@ These are two different projects. FiniteAutomata is a personal assignment I did 
 
 - KirkmanSolver: This is a solution to Kirkman's Schoolgirl Problem.
     
-The problem states:
+  > The problem states:
     
->"Fifteen young ladies in a school walk out three abreast for seven days in succession: it is required to arrange them daily so that no two shall walk twice abreast."                                    
+  >>"Fifteen young ladies in a school walk out three abreast for seven days in succession: it is required to arrange them daily so that no two shall walk twice abreast."                                    
 
-The following is my solution to the problem using backtracking. I was able to create the most efficient solution my professor has ever seen (using backtracking). His solution takes 18 million iterations and 2.54 seconds for completion, mine takes 300,000 iterations and .027 seconds.                                                       
+  > The following is my solution to the problem using backtracking. I was able to create the most efficient solution my professor has ever seen (using backtracking). His solution takes 18 million iterations and 2.54 seconds for completion, mine takes 300,000 iterations and .027 seconds.                                                       
 
-After seeing my solution, he challenged me to find the solution for a more difficult version that his code would not complete, 28 girls walking 2 abreast (requires a 27 days solution). After fixing a few inefficiencies in my code, it finished in 3 hours. I am very proud of this solution.         
+  > After seeing my solution, he challenged me to find the solution for a more difficult version that his code would not complete, 28 girls walking 2 abreast (requires a 27 days solution). After fixing a few inefficiencies in my code, it finished in 3 hours. I am very proud of this solution.         
 
-Note: I realize there are some "magic numbers" in This solution. That is not my conventional way of writing code. I am in the the process of creating a possible research proposal with my professor to parameterize this problem with n girls walking x abreast. I will be cleaning up this code more so then.
+  > Note: I realize there are some "magic numbers" in This solution. That is not my conventional way of writing code. I am in the the process of creating a possible research proposal with my professor to parameterize this problem with n girls walking x abreast. I will be cleaning up this code more so then.
 
 ###JS, HTML, CSS
 
