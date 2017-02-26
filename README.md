@@ -19,7 +19,7 @@ These are various 3D Models I have created completely by myself. I took an intro
 
 ###Java
 
-These are two different projects. FiniteAutomata is a personal assignment I did for fun for my professor in our Theory of Computation course. KirkmanSolver was an assignment from our Algorithms course.
+These are various assignments that range from our first Java programming lab course at LMU to Data Structures and Algorithms.
 
 - AdvancedChangeMaker: This program takes in coin denominations and an amount and presents the most efficient collection of coins that will add up to the given amount.
   - For example: Given the denominations (1, 4, 5) and an amount 8, the solution will propose using two 4-cent coins as opposed to one 5-cent and three 1-cent coins).
@@ -48,7 +48,9 @@ These are two different projects. FiniteAutomata is a personal assignment I did 
 
 ###JS, HTML, CSS
 
-These are three different assignments from our Interaction Design class at LMU
+These are four assignments from our Interaction Design and Graphics classes at LMU
+
+- 2D Animation: A minute long 2D scene with sprites drawn in Adobe Illustrator and JS Canvas and animated with JS
 
 - Direct Manipulation: This is a web page that allows a user to draw, move, resize, and delete boxes on a touchscreen device.
 
