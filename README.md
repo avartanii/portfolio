@@ -3,7 +3,7 @@ Examples of past assignments and projects
 
 **Description of Contents**
 
-###3D Models
+### 3D Models
 
 These are various 3D Models I have created completely by myself. I took an intro to AutoCAD course in my senior year of high school. The curriculum was quite simple, but I was able to use the small push start to develop my skills to develop the models found here.
 
@@ -17,7 +17,7 @@ These are various 3D Models I have created completely by myself. I took an intro
 
 - Lightsaber Mounts: This is still in progress. Two of these are to be used to mount a Force FX Lightsaber on a wall.
 
-###Java
+### Java
 
 These are various assignments that range from our first Java programming lab course at LMU to Data Structures and Algorithms.
 
@@ -46,7 +46,7 @@ These are various assignments that range from our first Java programming lab cou
 
   > Note: I realize there are some "magic numbers" in This solution. That is not my conventional way of writing code. I am in the the process of creating a possible research proposal with my professor to parameterize this problem with n girls walking x abreast. I will be cleaning up this code more so then.
 
-###JS, HTML, CSS
+### JS, HTML, CSS
 
 These are four assignments from our Interaction Design and Graphics classes at LMU
 
@@ -58,7 +58,7 @@ These are four assignments from our Interaction Design and Graphics classes at L
 
 - Web Front End: This is a custom rough front end development using Imgur's API. It allows users to search Imgur as well as browse the popular Galleries
 
-###Python
+### Python
 
 These are two different assignments from our Programming Languages class at LMU
 
