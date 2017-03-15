@@ -1,39 +1,3 @@
-// ******************************************************************
-// ******************************************************************
-// 																   **
-// **PLEASE READ**												   **
-// 																   **
-// This is a solution to Kirkman's Schoolgirl Problem.			   **
-// The problem states:											   **
-// 									 	  						   **
-// "Fifteen young ladies in a school 							   **
-// walk out three abreast for seven days in succession: 		   **
-// it is required to arrange them daily so that no two 			   **
-// shall walk twice abreast."									   **
-// 																   **
-// The following is my solution to the problem using		 	   **
-// backtracking. I was able to create the most efficient		   **
-// solution my professor has ever seen (using backtracking).	   **
-// His solution takes 18 million iterations and 2.54 seconds	   **
-// for completion, mine takes 300,000 iterations and .027		   **
-// seconds.														   **
-// 																   **
-// After seeing my solution, he challenged me to find the	 	   **
-// solution for a more difficult version that his code would	   **
-// not complete, 28 girls walking 2 abreast (requires a 27 days    **
-// solution). After fixing a few inefficiencies in my code, it	   **
-// finished in 3 hours. I am very proud of this solution.		   **
-// 																   **
-// Note: I realize there are some "magic numbers" in This 		   **
-// solution. That is not my conventional way of writing code.	   **
-// I am in the the process of creating a possible research		   **
-// proposal with my professor to parameterize this problem with	   **
-// n girls walking x abreast. I will be cleaning up this code	   **
-// more so then.												   **
-// 			 													   **
-// ******************************************************************
-// ******************************************************************
-
 import java.util.Arrays;
 import java.util.ArrayList;
 
@@ -181,7 +145,7 @@ public class KirkmanSolver {
 		public boolean contains(Girl g) {
 			for (int i = 0; i < this.totalNumberOfGirls; i++) {
 				if (this.order[i].equals(g)) {
-					return true; 
+					return true;
 				}
 			}
 			return false;
@@ -190,7 +154,7 @@ public class KirkmanSolver {
 		public int indexOf(Girl g) {
 			for (int i = 0; i < this.totalNumberOfGirls; i++) {
 				if (this.order[i].equals(g)) {
-					return i; 
+					return i;
 				}
 			}
 			return 0;
@@ -282,7 +246,7 @@ public class KirkmanSolver {
 						i -= i >= 2 ? 2 : 1;
 						j = numberOfDays;
 						dayNumber = 6;
-					}	
+					}
 				}
 			}
 		}
